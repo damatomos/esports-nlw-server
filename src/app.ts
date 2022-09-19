@@ -90,4 +90,4 @@ app.get('/ads/:id/discord', async (req, res) => {
   return res.json({ discord: ad.discord });
 });
 
-app.listen(4040, () => console.log("Server running on 4040."));
+app.listen(process.env.PORT || 4040, () => console.log("Server running on 4040."));
